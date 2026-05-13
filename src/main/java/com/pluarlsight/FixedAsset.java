@@ -2,7 +2,7 @@ package com.pluarlsight;
 
 import com.plualsight.finance.IValuable;
 
-public class FixedAsset implements IValuable {
+public abstract class FixedAsset implements IValuable {
 
     private String name;
     private double value;
@@ -12,8 +12,6 @@ public class FixedAsset implements IValuable {
         this.value = value;
     }
 
-    @Override
-    public double getValue() {
-        return 0;
-    }
+
+    public abstract double getValue();
 }
