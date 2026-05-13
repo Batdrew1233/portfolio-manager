@@ -1,4 +1,5 @@
 package com.plualsight.finance;
 
-public interface IValueable {
+public interface IValuable {
+    double getValue();
 }
